@@ -7,16 +7,19 @@ module.exports = {
     filename: 'bundle.js'
   },
 
+  module: {
+    loaders: [
+      {
+        test: /\.json$/,
+        loader: 'json'
+      }
+    ]
+  },
+
   devServer: {
     contentBase: './public',
     colors: true,
     historyApiFallback: true,
     inline: true
-  },
-
-  module: {
-    loaders: [
-      
-    ]
   }
 }
