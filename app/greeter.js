@@ -1,7 +1,16 @@
-var config = require('../config.json')
+import React, { Component } from 'react'
+import config from './config.json'
 
-module.exports = function() {
-  var greet = document.createElement('div')
-  greet.textContent = config.greetText
-  return greet
+class Greeter extends Component {
+  render() {
+    return (
+      <div>
+        <div>{ config.greetText }</div>
+        <div>{ config.greetText2 }</div>
+        <div>new div</div>
+      </div>
+    )
+  }
 }
+
+export default Greeter
