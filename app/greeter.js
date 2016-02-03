@@ -12,7 +12,7 @@ class Greeter extends Component {
         <div>new div</div>
         <div>{ test.thing }</div>
         <div>{ test2.thing }</div>
-        <div>NO RELOADING!!!</div>
+        <div>NO RELOADING!</div>
       </div>
     )
   }
