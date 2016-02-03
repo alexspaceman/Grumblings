@@ -1,9 +1,12 @@
+var webpack = require('webpack')
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
   devtool: 'source-map',
 
   entry: './app/main.js',
   output: {
-    path: './public',
+    path: './build',
     filename: 'bundle.js'
   },
 
@@ -20,15 +23,27 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style!css'
+        loader: 'style!css?modules!postcss'
       }
     ]
   },
+
+  postcss: [
+    require('autoprefixer')
+  ],
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './app/index.tmpl.html'
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ],
 
   devServer: {
     contentBase: './public',
     colors: true,
     historyApiFallback: true,
-    inline: true
+    inline: true,
+    hot: true
   }
 }
