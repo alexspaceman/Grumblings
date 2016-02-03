@@ -1,9 +1,9 @@
 var test = {
-  thing: 'this is test text change'
+  thing: 'this is test.js stuff'
 }
 
 var test2 = {
-  thing: 'what?'
+  thing: 'what? more test.js'
 }
 
 export { test, test2 }

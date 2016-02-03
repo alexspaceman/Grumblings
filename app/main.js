@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Greeter from './Greeter'
+import { ReactTest } from './ReactTest'
 
 import './main.css'
 
-render(<Greeter />, document.getElementById('root'))
+render(<ReactTest />, document.getElementById('root'))
