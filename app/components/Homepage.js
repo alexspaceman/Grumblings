@@ -9,7 +9,6 @@ class Homepage extends Component {
         <div className={ styles.root }>This is the Homepage</div>
         <div>{ test.first }</div>
         <div className={ styles.button }>Test Area</div>
-        <div>STATE TEST: {  }</div>
       </div>
     )
   }

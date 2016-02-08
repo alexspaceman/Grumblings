@@ -13,6 +13,7 @@
     "babel-preset-react": "^6.3.13",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "history": "^1.17.x",
     "html-webpack-plugin": "^2.7.2",
     "json-loader": "^0.5.4",
     "postcss-loader": "^0.8.0",
@@ -23,8 +24,7 @@
     "style-loader": "^0.13.0",
     "stylus-loader": "^1.5.1",
     "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1",
-    "history": "^1.17.x"
+    "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
     "start": "webpack-dev-server --progress",
