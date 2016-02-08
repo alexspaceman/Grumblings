@@ -1,7 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { ReactTest } from './ReactTest'
+import { Router, Route, Link } from 'react-router'
+import { Homepage } from './components/Homepage'
 
 import './main.css'
 
-render(<ReactTest />, document.getElementById('root'))
+render(<Homepage />, document.getElementById('root'))
