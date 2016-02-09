@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(72, 72, 62);
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  font-family: Consolas, Courier;
+}
+
+a {
+  color: yellow;
+}

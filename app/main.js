@@ -2,6 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route } from 'react-router'
 
+import styles from './rootStyles.css'
+
 import Home from './components/Home.js'
 import Tests from './components/Tests.js'
 

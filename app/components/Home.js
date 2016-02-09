@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import Radium from 'radium'
-import { Router, Route, Link } from 'react-router'
+import { Link } from 'react-router'
+
+import style from '../styles/styles.js'
+
+import Header from '../components/Header.js'
+import Content from '../components/Content.js'
+import Footer from '../components/Footer.js'
 
 class Home extends Component {
   render () {
     return (
-      <div>
-        <div>Dashboard</div>
-        <div><Link to="/tests">Tests</Link></div>
+      <div style={ style.general }>
+        <Header />
+        <Content />
+        <Footer />
       </div>
     )
   }

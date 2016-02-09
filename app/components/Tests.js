@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import Radium from 'radium'
-import { Router, Route, Link } from 'react-router'
+import { Link } from 'react-router'
+
+import style from '../styles/styles.js'
+import Header from './Header.js'
 
 class Tests extends Component {
   render () {
     return (
-      <div>
+      <div style={ style.general }>
         <div>Tests</div>
         <div><Link to="/">Dashboard</Link></div>
+        <Header />
       </div>
     )
   }
