@@ -1,18 +1,25 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, Link } from 'react-router'
-import { Homepage } from './components/Homepage'
-import './main.css'
+import { Testpage } from './components/Testpage'
+import mainStyles from './styles/main.css'
 
-const App = React.createClass({
+const Home = React.createClass({
   render() {
     return (
-      <div>
-        <h1>App</h1>
-        <ul>
-          <li><Link to="/homepage">Homepage</Link></li>
-        </ul>
-        { this.props.children }
+      <div className={ mainStyles.siteContainer }>
+        <div className={ mainStyles.header }>
+          <div className={ mainStyles.headerTitle }>Spaceman's Playground</div>
+          <div className={ mainStyles.headerLinks }>
+            <Link to="/homepage" className={ mainStyles.headerLink }>Testpage</Link>
+          </div>
+        </div>
+        <div className={ mainStyles.mainView }>
+          { this.props.children }
+        </div>
+        <div className={ mainStyles.footer }>
+          Footer
+        </div>
       </div>
     )
   }
@@ -20,8 +27,8 @@ const App = React.createClass({
 
 render((
   <Router>
-    <Route path="/" component={ App }>
-      <Route path="homepage" component={ Homepage }/>
+    <Route path="/" component={ Home }>
+      <Route path="homepage" component={ Testpage }/>
     </Route>
   </Router>
 ), document.getElementById('root'))
