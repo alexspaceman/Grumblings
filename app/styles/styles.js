@@ -1,4 +1,5 @@
 import consts from './consts.js'
+import dynamic from './dynamic.js'
 
 export default {
   general: {
@@ -13,7 +14,8 @@ export default {
   },
 
   content: {
-    border: `1px rgb(141, 232, 179) solid`
+    border: `1px rgb(141, 232, 179) solid`,
+    height: dynamic.CONTENT_HEIGHT
   },
 
   footer: {
