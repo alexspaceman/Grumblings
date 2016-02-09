@@ -1,24 +1,13 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, Link } from 'react-router'
-import Radium from 'radium'
+import { Router, Route } from 'react-router'
 
-// import Home from './components/Home.js'
-
-// @Radium
-class Home extends React.Component {
-  render () {
-    return (
-      <div>
-        This is Home!
-      </div>
-    )
-  }
-}
+import Home from './components/Home.js'
+import Tests from './components/Tests.js'
 
 render((
   <Router>
-    <Route path="/" component={ Home }>
-    </Route>
+    <Route path="/" component={ Home } />
+    <Route path="tests" component={ Tests } />
   </Router>
 ), document.getElementById('root'))
