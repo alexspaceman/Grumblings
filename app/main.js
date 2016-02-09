@@ -4,12 +4,12 @@ import { Router, Route } from 'react-router'
 
 import styles from './rootStyles.css'
 
-import Home from './components/Home.js'
-import Tests from './components/Tests.js'
+import Homepage from './pages/Homepage.js'
+import Tests from './pages/Tests.js'
 
 render((
   <Router>
-    <Route path="/" component={ Home } />
+    <Route path="/" component={ Homepage } />
     <Route path="tests" component={ Tests } />
   </Router>
 ), document.getElementById('root'))

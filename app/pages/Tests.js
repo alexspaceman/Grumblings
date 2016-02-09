@@ -3,7 +3,7 @@ import Radium from 'radium'
 import { Link } from 'react-router'
 
 import style from '../styles/styles.js'
-import Header from './Header.js'
+import Header from '../components/Header.js'
 
 class Tests extends Component {
   render () {
