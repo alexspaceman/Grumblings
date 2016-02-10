@@ -2,24 +2,35 @@ import consts from './consts.js'
 import dynamic from './dynamic.js'
 
 export default {
+  // main
   general: {
     padding: `0px`,
     margin: `0px`,
-    backgroundColor: consts.GREY
+    backgroundColor: consts.GREY,
   },
 
+  // header
   header: {
-    border: `1px orange solid`,
-    height: consts.HEADER_HEIGHT
+    border: `${ consts.BORDER_WIDTH }px ${ consts.ORANGE } solid`,
+    height: consts.HEADER_HEIGHT,
   },
 
+  headerLink: {
+    minHeight: `20px`,
+    minWidth: `60px`,
+    border: `2px red solid`,
+    textDecoration: `none`,
+  },
+
+  // content
   content: {
-    border: `1px rgb(141, 232, 179) solid`,
-    height: dynamic.CONTENT_HEIGHT
+    border: `${ consts.BORDER_WIDTH }px ${ consts.GREEN } solid`,
+    height: dynamic.CONTENT_HEIGHT,
   },
 
+  // footer
   footer: {
-    border: `1px rgb(107, 190, 211) solid`,
-    height: consts.FOOTER_HEIGHT
-  }
+    border: `${ consts.BORDER_WIDTH }px ${ consts.BLUE } solid`,
+    height: consts.FOOTER_HEIGHT,
+  },
 }

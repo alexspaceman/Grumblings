@@ -10,8 +10,9 @@ class Header extends Component {
       <div style={ style.header }>
         <div style={ style.pageTitle }>Header</div>
         <div style={ style.headerLinks }>
-          <span><Link to="/">Dashboard</Link></span>
-          <span><Link to="/tests">Tests</Link></span>
+          <span style={ style.headerLink }><Link to="/">Dashboard</Link></span>
+          <span style={ style.headerLink }><Link to="/tests">Tests</Link></span>
+          <span style={ style.headerLink }>Click Me</span>
         </div>
       </div>
     )
