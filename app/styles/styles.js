@@ -15,10 +15,15 @@ export default {
     height: consts.HEADER_HEIGHT,
   },
 
+  headerLinks: {
+    textAlign: `center`,
+  },
+
   headerLink: {
-    minHeight: `20px`,
-    minWidth: `60px`,
-    border: `2px red solid`,
+    display: `inline-block`,
+    height: consts.HEADER_LINKS_HEIGHT,
+    width: consts.HEADER_LINKS_WIDTH,
+    border: `${ consts.BORDER_WIDTH }px red solid`,
     textDecoration: `none`,
   },
 
