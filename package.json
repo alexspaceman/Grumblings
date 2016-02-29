@@ -16,6 +16,7 @@
     "history": "^1.17.x",
     "html-webpack-plugin": "^2.7.2",
     "json-loader": "^0.5.4",
+    "mongodb": "^2.1.7",
     "postcss-loader": "^0.8.0",
     "radium": "^0.16.5",
     "react": "^0.14.7",
