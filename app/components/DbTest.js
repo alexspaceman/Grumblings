@@ -12,6 +12,7 @@ class DbTest extends Component {
     this.handleResize = () => {
       let newState = this.state
       newState.contentStyle.height = window.innerHeight - consts.HEADER_HEIGHT - consts.FOOTER_HEIGHT - (consts.BORDER_WIDTH * 6)
+
       this.setState(newState)
     }
 
@@ -19,6 +20,7 @@ class DbTest extends Component {
       count: 0,
       contentStyle: {
         border: '3px rgb(108,199,44) solid',
+        // there must be a better way to write this long shitty function and pull it dynamically from another file
         height: window.innerHeight - consts.HEADER_HEIGHT - consts.FOOTER_HEIGHT - (consts.BORDER_WIDTH * 6)
       }
     }
@@ -26,6 +28,10 @@ class DbTest extends Component {
 
   componentDidMount () {
     window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.handleResize);
   }
 
   render () {
