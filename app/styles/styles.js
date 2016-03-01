@@ -30,7 +30,7 @@ export default {
   // content
   content: {
     border: `${ consts.BORDER_WIDTH }px ${ consts.GREEN } solid`,
-    height: dynamic.CONTENT_HEIGHT,
+    height: window.innerHeight - consts.HEADER_HEIGHT - consts.FOOTER_HEIGHT - (consts.BORDER_WIDTH * 6),
   },
 
   // footer
